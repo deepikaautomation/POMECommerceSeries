@@ -48,14 +48,14 @@ public class AccountsPage {
 		//String title=driver.getTitle();
 		String title=eleUtil.waitForTitleIsandFetch(AppConstants.DEFAULT_SHORT_TIME_OUT,AppConstants.ACCOUNTS_PAGE_TITLE_VALUE);
 		
-		System.out.println("Account page title is---  >   " + title);
+		System.out.println("Account page title is===  >   " + title);
 		return title;
 	}
 	
 	public String getAccPageUrl() {
 		//String url=driver.getCurrentUrl();
 		String url=eleUtil.waitForUrlContainsandFetch(AppConstants.DEFAULT_LONG_TIME_OUT, AppConstants.ACCOUNTS_PAGE_URL_FRACTION_VALUE);
-		System.out.println("Account page URL is---  >   " + url);
+		System.out.println("Account page URL is=== >   " + url);
 		return url;
 	}
 	
@@ -92,7 +92,7 @@ public class AccountsPage {
 			
 		}
 		else {
-			System.out.println("Serach element not exist");
+			System.out.println("Search element not exist");
 			return null;
 		}
 		
