@@ -27,6 +27,8 @@ public class ProductInfoPage {
 	private By productPriceData=By.xpath("(//div[@id='content']//ul[@class='list-unstyled'])[2]/li");
 	private Map<String,String> productMetaInfo;
 	private Map<String,String> productPriceInfo;
+	//this is to learn git commands
+	private By prstTest=By.name("TEst");
 	
 	public ProductInfoPage(WebDriver driver) {
 		
