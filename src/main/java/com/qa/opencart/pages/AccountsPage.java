@@ -24,7 +24,7 @@ public class AccountsPage {
 	private By search=By.name("search");
 	private By searchPdt=By.cssSelector("#search button");
 	
-	
+	private By Test=By.cssSelector("#Test Test");
 	
 	public AccountsPage(WebDriver driver) {
 		
@@ -95,6 +95,11 @@ public class AccountsPage {
 			System.out.println("Search element not exist");
 			return null;
 		}
+		
+	}
+	
+	public void Test() {
+		System.out.println(Test);
 		
 	}
 	
