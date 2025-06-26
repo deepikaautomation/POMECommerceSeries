@@ -2,6 +2,7 @@ package com.qa.opencart.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.utils.ElementUtil;
@@ -11,6 +12,8 @@ public class SearchPage  {
 	private WebDriver driver;
 	private ElementUtil eleUtil;
 	private By searchProductResults=By.cssSelector("div#content div.product-layout");
+	
+	
 
 	public SearchPage(WebDriver driver) {
 		
@@ -36,5 +39,9 @@ public class SearchPage  {
 		
 		
 	}
+	
+
+	
+
 
 }

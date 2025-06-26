@@ -19,6 +19,7 @@ public class AccountsPageTest extends BaseTest{
 	public void accPageSetUp() {
 		
 		accountsPage=loginPage.doLogin("deepikadr86@gmail.com", "test@123");
+		
 	}
 	
 	
@@ -26,6 +27,7 @@ public class AccountsPageTest extends BaseTest{
 	public void logoExist() {
 		
 		Assert.assertTrue(accountsPage.isLogoExist());
+	
 		
 		
 		

@@ -30,6 +30,12 @@ public class ProductInfoPage {
 	//this is to learn git commands
 	private By prstTest=By.name("TEst");
 	
+	//private By addToCartQty=By.name("quantity");
+	private By addToCartQty=By.xpath("//div[@id='product']//input[@name='quantity']");
+	
+	private By addToCartButton=By.cssSelector("button#button-cart");
+	private By successmsg=By.xpath("//div[@class='alert alert-success alert-dismissible']");
+	
 	public ProductInfoPage(WebDriver driver) {
 		
 		
@@ -51,6 +57,7 @@ public class ProductInfoPage {
 		System.out.println("Iamges count:::" + productimgCount);
 		return productimgCount;
 	}
+	
 	
 	
 	
@@ -101,6 +108,29 @@ public class ProductInfoPage {
 			getProductPriceData();
 			System.out.println("Product Full Data :: " + productMetaInfo);
 			return productMetaInfo;
+			
+		}
+		
+		public String getAddtoCart()  {
+			
+			
+			
+			
+			
+		    eleUtil.waitUntilVisible(addToCartQty, AppConstants.DEFAULT_MEDIUM_TIME_OUT);
+			eleUtil.doSendKeys(addToCartQty, "2");
+			
+			eleUtil.waitForElementToBeClicakable(addToCartButton, AppConstants.DEFAULT_SHORT_TIME_OUT);
+			eleUtil.doClick(addToCartButton);
+			
+			WebElement successtText=eleUtil.waitUntilVisible(successmsg, AppConstants.DEFAULT_SHORT_TIME_OUT);
+			String text=successtText.getText();
+			String cleanedText = text.replace("×", "").trim();
+			System.out.println(cleanedText);
+			
+			
+			return cleanedText;
+			
 			
 		}
 

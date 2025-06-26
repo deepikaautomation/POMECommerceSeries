@@ -78,6 +78,7 @@ public class ProductInfoTest extends BaseTest{
 		int actualImagesCouint=pi.getProductImageCount();
 		Assert.assertEquals(actualImagesCouint, productCount);
 	}
+
 	
 
 }

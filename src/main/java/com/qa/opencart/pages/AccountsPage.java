@@ -24,6 +24,9 @@ public class AccountsPage {
 	private By search=By.name("search");
 	private By searchPdt=By.cssSelector("#search button");
 	
+	private By addToCartQty=By.name("quantity");
+	private By addToCartButton=By.cssSelector("button#button-cart");
+	
 	private By Test=By.cssSelector("#Test Test");
 	
 	public AccountsPage(WebDriver driver) {
@@ -102,6 +105,8 @@ public class AccountsPage {
 		System.out.println(Test);
 		
 	}
+	
+	
 	
 	
 

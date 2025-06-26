@@ -46,6 +46,12 @@
 			<class name="com.qa.opencart.tests.RegisterPageTest" />
 		</classes>
 	</test>
+	
+	<test name="AddToCart Test">
+		<classes>
+			<class name="com.qa.opencart.tests.SerachPageTest"></class>
+		</classes>
+	</test>
 
 
 </suite>

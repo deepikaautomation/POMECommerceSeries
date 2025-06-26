@@ -26,6 +26,7 @@ public class BaseTest {
 	protected SearchPage searchPage;
 	protected ProductInfoPage prodInfoPage;
 	protected RegisterPage registerPage;
+	
 	protected SoftAssert softAssert;
 	
 	
@@ -49,6 +50,8 @@ public class BaseTest {
 		
 		
 		loginPage=new LoginPage(driver);
+		
+		accountsPage=new AccountsPage(driver);
 		softAssert=new SoftAssert();
 		
 		
